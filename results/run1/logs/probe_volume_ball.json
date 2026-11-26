@@ -1,0 +1,23 @@
+{
+ "seed": 42,
+ "out_dir": "/kaggle/working/exp/probe_volume_ball",
+ "sanity_dir": "/kaggle/temp/sanity/probe_volume_ball",
+ "cache_dir": "/kaggle/temp/npy_cache",
+ "mask_ids": "/kaggle/working/rsuper_data/meta/ids_mask_train.csv",
+ "mask_dir": "/kaggle/working/rsuper_data/mask_npz",
+ "crop": 96,
+ "batch": 2,
+ "workers": 4,
+ "lr": 0.0001,
+ "warmup": 5,
+ "epochs": 1,
+ "iters": 30,
+ "print_freq": 25,
+ "loss": "ball_dice_last",
+ "report_weight": 0.1,
+ "volume_tolerance": 0.1,
+ "init_from": "/kaggle/working/exp/probe_baseline/latest.pth",
+ "report_ids": "/kaggle/working/rsuper_data/meta/ids_report_only.csv",
+ "report_dir": "/kaggle/working/rsuper_data/report_npz",
+ "reports": "/kaggle/working/rsuper_data/meta/reports_sigma0.10.csv"
+}

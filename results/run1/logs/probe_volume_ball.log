@@ -1,0 +1,267 @@
+npy cache ready (50 mask + 150 report cases, 70s)
+initialised from /kaggle/working/exp/probe_baseline/latest.pth (epoch 1)
+device cuda x2 | amp True | loss ball_dice_last | report weight 0.1 | tolerance 0.1 | params 16.5 M
+Starting epoch 1/1 lr 4.54e-09
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/kaggle/working/rsuper_core.py:2877: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  agg[k] = agg.get(k, 0.0) + float(v)
+Saved to ./LossChecking/0_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/0_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/0_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 0_known_voxels
+Dice loss: tensor(0.9706, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4918, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/1/x.nii.gz
+Saved NIfTI file to SanityBallLoss/1/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/1/border.nii.gz
+Saved NIfTI file to SanityBallLoss/1/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/1/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/1/input_volume.nii.gz
+Saved to SanityBallLoss/1/known_voxels
+Volume in output: 435143.125, Volume in report: 17006.48828125, Loss: 1.6193063855171204
+Saved to SanityBallLoss/1/loss.yaml
+Saved to SanityOutputs/0_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/0_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/0_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/0_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 1_known_voxels
+Saved to SanityOutputs/1_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/1_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/1_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/1_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 2_known_voxels
+Saved to SanityOutputs/2_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/2_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/2_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/2_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 3_known_voxels
+Dice loss: tensor(0.9646, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4872, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/2/x.nii.gz
+Saved NIfTI file to SanityBallLoss/2/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/2/border.nii.gz
+Saved NIfTI file to SanityBallLoss/2/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/2/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/2/input_volume.nii.gz
+Saved to SanityBallLoss/2/known_voxels
+Volume in output: 431020.09375, Volume in report: 8214.2177734375, Loss: 1.6034592986106873
+Saved to SanityBallLoss/2/loss.yaml
+Saved to SanityOutputs/3_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/3_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/3_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/3_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 4_known_voxels
+Dice loss: tensor(0.9889, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4913, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/3/x.nii.gz
+Saved NIfTI file to SanityBallLoss/3/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/3/border.nii.gz
+Saved NIfTI file to SanityBallLoss/3/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/3/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/3/input_volume.nii.gz
+Saved to SanityBallLoss/3/known_voxels
+Volume in output: 434708.0625, Volume in report: 5065.818359375, Loss: 1.656613290309906
+Saved to SanityBallLoss/3/loss.yaml
+Saved to SanityOutputs/4_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/4_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/4_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/4_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 5_known_voxels
+Saved to ./LossChecking/6_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/6_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/6_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 6_known_voxels
+Dice loss: tensor(0.9934, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4904, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/4/x.nii.gz
+Saved NIfTI file to SanityBallLoss/4/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/4/border.nii.gz
+Saved NIfTI file to SanityBallLoss/4/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/4/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/4/input_volume.nii.gz
+Saved to SanityBallLoss/4/known_voxels
+Volume in output: 433855.59375, Volume in report: 2492.330078125, Loss: 1.66435706615448
+Saved to SanityBallLoss/4/loss.yaml
+Saved to ./LossChecking/7_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/7_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/7_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 7_known_voxels
+Dice loss: tensor(0.9835, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4946, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/5/x.nii.gz
+Saved NIfTI file to SanityBallLoss/5/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/5/border.nii.gz
+Saved NIfTI file to SanityBallLoss/5/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/5/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/5/input_volume.nii.gz
+Saved to SanityBallLoss/5/known_voxels
+Volume in output: 437569.65625, Volume in report: 12117.123046875, Loss: 1.6507440209388733
+Saved to SanityBallLoss/5/loss.yaml
+Saved to ./LossChecking/8_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/8_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/8_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 8_known_voxels
+Dice loss: tensor(0.9932, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4854, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/6/x.nii.gz
+Saved NIfTI file to SanityBallLoss/6/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/6/border.nii.gz
+Saved NIfTI file to SanityBallLoss/6/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/6/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/6/input_volume.nii.gz
+Saved to SanityBallLoss/6/known_voxels
+Volume in output: 429476.3125, Volume in report: 4178.318359375, Loss: 1.6549710035324097
+Saved to SanityBallLoss/6/loss.yaml
+Saved to ./LossChecking/9_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/9_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/9_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 9_known_voxels
+Dice loss: tensor(0.9868, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4935, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/7/x.nii.gz
+Saved NIfTI file to SanityBallLoss/7/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/7/border.nii.gz
+Saved NIfTI file to SanityBallLoss/7/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/7/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/7/input_volume.nii.gz
+Saved to SanityBallLoss/7/known_voxels
+Volume in output: 436593.3125, Volume in report: 6177.94189453125, Loss: 1.6566431522369385
+Saved to SanityBallLoss/7/loss.yaml
+Dice loss: tensor(0.9799, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4912, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/8/x.nii.gz
+Saved NIfTI file to SanityBallLoss/8/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/8/border.nii.gz
+Saved NIfTI file to SanityBallLoss/8/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/8/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/8/input_volume.nii.gz
+Saved to SanityBallLoss/8/known_voxels
+Volume in output: 434559.6875, Volume in report: 12709.3134765625, Loss: 1.6378301978111267
+Saved to SanityBallLoss/8/loss.yaml
+Dice loss: tensor(0.9604, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4953, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/9/x.nii.gz
+Saved NIfTI file to SanityBallLoss/9/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/9/border.nii.gz
+Saved NIfTI file to SanityBallLoss/9/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/9/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/9/input_volume.nii.gz
+Saved to SanityBallLoss/9/known_voxels
+Volume in output: 438252.375, Volume in report: 10027.9638671875, Loss: 1.6119678020477295
+Saved to SanityBallLoss/9/loss.yaml
+Dice loss: tensor(0.9952, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4913, device='cuda:0', grad_fn=<MeanBackward0>)
+Saved NIfTI file to SanityBallLoss/10/x.nii.gz
+Saved NIfTI file to SanityBallLoss/10/pseudo_mask.nii.gz
+Saved NIfTI file to SanityBallLoss/10/border.nii.gz
+Saved NIfTI file to SanityBallLoss/10/tumor_segment.nii.gz
+Saved NIfTI file to SanityBallLoss/10/to_penalize.nii.gz
+Saved NIfTI file to SanityBallLoss/10/input_volume.nii.gz
+Saved to SanityBallLoss/10/known_voxels
+Volume in output: 434693.5, Volume in report: 2111.150146484375, Loss: 1.6725038290023804
+Saved to SanityBallLoss/10/loss.yaml
+Dice loss: tensor(0.9967, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4939, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.9915, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4852, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.9983, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4883, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.9916, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4887, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.9995, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4944, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.9952, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4857, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.9892, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4914, device='cuda:0', grad_fn=<MeanBackward0>)
+  ep 1 it 25/30 segmentation 1.6863 ball_loss_bce 0.0337 ball_loss_dice 0.0498 dice_volume_loss 0.0148 overall 1.7846 | 2.44 s/it
+Dice loss: tensor(0.9831, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4901, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.9701, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4881, device='cuda:0', grad_fn=<MeanBackward0>)
+Dice loss: tensor(0.5325, device='cuda:0', grad_fn=<MeanBackward0>) Mean prediction: tensor(0.4932, device='cuda:0', grad_fn=<MeanBackward0>)
+epoch 1 done in 90s; segmentation 1.6853 ball_loss_bce 0.0335 ball_loss_dice 0.0494 dice_volume_loss 0.0138 overall 1.7820 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop

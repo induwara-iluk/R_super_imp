@@ -1,0 +1,93 @@
+{
+ "prep": {
+  "state": "done",
+  "cases": 265,
+  "failed": [],
+  "minutes": 28.8,
+  "updated_h": 0.5
+ },
+ "probe_baseline": {
+  "state": "done",
+  "target_epochs": 1,
+  "cap_h": 0.75,
+  "updated_h": 0.53,
+  "epoch": 1,
+  "hours": 0.02,
+  "sec_per_iter": 1.498,
+  "log": "/kaggle/working/logs/probe_baseline.log"
+ },
+ "probe_volume_ball": {
+  "state": "done",
+  "target_epochs": 1,
+  "cap_h": 0.75,
+  "updated_h": 0.57,
+  "epoch": 1,
+  "hours": 0.05,
+  "sec_per_iter": 3.169,
+  "log": "/kaggle/working/logs/probe_volume_ball.log",
+  "crops": "{'on_segment': 0, 'failed': 0, 'random': 0}"
+ },
+ "baseline": {
+  "state": "done",
+  "target_epochs": 24,
+  "cap_h": 2.85,
+  "updated_h": 1.32,
+  "epoch": 24,
+  "hours": 0.75,
+  "sec_per_iter": 0.556,
+  "log": "/kaggle/working/logs/baseline.log"
+ },
+ "control": {
+  "state": "done",
+  "target_epochs": 12,
+  "cap_h": 3.0,
+  "updated_h": 1.68,
+  "epoch": 12,
+  "hours": 0.35,
+  "sec_per_iter": 0.515,
+  "log": "/kaggle/working/logs/control.log",
+  "crops": "{'on_segment': 0, 'failed': 0, 'random': 0}"
+ },
+ "volume": {
+  "state": "done",
+  "target_epochs": 12,
+  "cap_h": 3.0,
+  "updated_h": 2.25,
+  "epoch": 12,
+  "hours": 0.58,
+  "sec_per_iter": 0.859,
+  "log": "/kaggle/working/logs/volume.log",
+  "crops": "{'on_segment': 0, 'failed': 0, 'random': 0}"
+ },
+ "volume_ball": {
+  "state": "done",
+  "target_epochs": 12,
+  "cap_h": 3.0,
+  "updated_h": 3.67,
+  "epoch": 12,
+  "hours": 1.42,
+  "sec_per_iter": 2.121,
+  "log": "/kaggle/working/logs/volume_ball.log",
+  "crops": "{'on_segment': 0, 'failed': 0, 'random': 0}"
+ },
+ "eval_baseline": {
+  "state": "done",
+  "updated_h": 3.89,
+  "dice_lesion_raw": 0.04
+ },
+ "eval_control": {
+  "state": "done",
+  "updated_h": 4.11,
+  "dice_lesion_raw": 0.035
+ },
+ "eval_volume": {
+  "state": "done",
+  "updated_h": 4.33,
+  "dice_lesion_raw": 0.033
+ },
+ "eval_volume_ball": {
+  "state": "done",
+  "updated_h": 4.55,
+  "dice_lesion_raw": 0.037
+ }
+}

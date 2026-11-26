@@ -1,0 +1,20 @@
+{
+ "seed": 42,
+ "out_dir": "/kaggle/working/exp/baseline",
+ "sanity_dir": "/kaggle/temp/sanity/baseline",
+ "cache_dir": "/kaggle/temp/npy_cache",
+ "mask_ids": "/kaggle/working/rsuper_data/meta/ids_mask_train.csv",
+ "mask_dir": "/kaggle/working/rsuper_data/mask_npz",
+ "crop": 96,
+ "batch": 2,
+ "workers": 4,
+ "lr": 0.001,
+ "warmup": 5,
+ "epochs": 24,
+ "iters": 200,
+ "print_freq": 25,
+ "loss": "dice",
+ "report_weight": 0.0,
+ "volume_tolerance": 0.1,
+ "init_from": null
+}
