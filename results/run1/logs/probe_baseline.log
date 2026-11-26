@@ -1,0 +1,236 @@
+npy cache ready (50 mask + 0 report cases, 14s)
+device cuda x2 | amp True | loss dice | report weight 0.0 | tolerance 0.1 | params 16.5 M
+Starting epoch 1/1 lr 4.54e-08
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/kaggle/working/rsuper_core.py:2877: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  agg[k] = agg.get(k, 0.0) + float(v)
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Saved to ./LossChecking/0_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/0_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/0_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 0_known_voxels
+Saved to SanityOutputs/0_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/0_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/0_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/0_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 1_known_voxels
+Saved to SanityOutputs/1_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/1_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/1_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/1_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 2_known_voxels
+Saved to SanityOutputs/2_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/2_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/2_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/2_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 3_known_voxels
+Saved to SanityOutputs/3_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/3_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/3_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/3_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 4_known_voxels
+Saved to SanityOutputs/4_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/4_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/4_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/4_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 5_known_voxels
+Saved to ./LossChecking/6_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/6_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/6_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 6_known_voxels
+Saved to ./LossChecking/7_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/7_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/7_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 7_known_voxels
+Saved to ./LossChecking/8_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/8_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/8_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 8_known_voxels
+Saved to ./LossChecking/9_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/9_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/9_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 9_known_voxels
+  ep 1 it 25/30 segmentation 1.6862 report 0.0000 overall 1.6862 | 1.43 s/it
+epoch 1 done in 39s; segmentation 1.6861 report 0.0000 overall 1.6861 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop

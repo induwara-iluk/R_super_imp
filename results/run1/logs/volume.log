@@ -1,0 +1,5760 @@
+npy cache ready (50 mask + 150 report cases, 0s)
+initialised from /kaggle/working/exp/baseline/latest.pth (epoch 24)
+device cuda x2 | amp True | loss dice | report weight 0.1 | tolerance 0.1 | params 16.5 M
+Starting epoch 1/12 lr 4.54e-09
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/usr/local/lib/python3.13/dist-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/kaggle/working/rsuper_core.py:2877: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  agg[k] = agg.get(k, 0.0) + float(v)
+Saved to ./LossChecking/0_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/0_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/0_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 0_known_voxels
+Saved to SanityOutputs/0_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/0_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/0_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/0_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/1_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 1_known_voxels
+Saved to SanityOutputs/1_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/1_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/1_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/1_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/2_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 2_known_voxels
+Saved to SanityOutputs/2_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/2_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/2_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/2_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/3_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 3_known_voxels
+Saved to SanityOutputs/3_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/3_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/3_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/3_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/4_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 4_known_voxels
+Saved to SanityOutputs/4_pancreatic_lesion.nii.gz
+Saved to SanityLabelsBeforeLoss/4_pancreatic_lesion.nii.gz
+Saved to SanityLossBCE/4_pancreatic_lesion.nii.gz
+Saved to SanityLossBCEAfterKnownVoxels/4_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/5_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 5_known_voxels
+Saved to ./LossChecking/6_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/6_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/6_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 6_known_voxels
+Saved to ./LossChecking/7_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/7_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/7_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 7_known_voxels
+Saved to ./LossChecking/8_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/8_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/8_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 8_known_voxels
+Saved to ./LossChecking/9_y_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/9_known_voxels_pancreatic_lesion.nii.gz
+Saved to ./LossChecking/9_unk_voxels_pancreatic_lesion.nii.gz
+Saved to 9_known_voxels
+  ep 1 it 25/200 segmentation 0.5877 dice_volume_loss 0.0102 overall 0.5979 | 1.54 s/it
+  ep 1 it 50/200 segmentation 0.5836 dice_volume_loss 0.0124 overall 0.5960 | 1.20 s/it
+  ep 1 it 75/200 segmentation 0.5897 dice_volume_loss 0.0128 overall 0.6025 | 1.09 s/it
+  ep 1 it 100/200 segmentation 0.5911 dice_volume_loss 0.0131 overall 0.6042 | 1.03 s/it
+  ep 1 it 125/200 segmentation 0.5894 dice_volume_loss 0.0129 overall 0.6022 | 1.00 s/it
+  ep 1 it 150/200 segmentation 0.5928 dice_volume_loss 0.0123 overall 0.6051 | 0.97 s/it
+  ep 1 it 175/200 segmentation 0.5959 dice_volume_loss 0.0128 overall 0.6087 | 0.96 s/it
+  ep 1 it 200/200 segmentation 0.5960 dice_volume_loss 0.0136 overall 0.6096 | 0.94 s/it
+epoch 1 done in 189s; segmentation 0.5960 dice_volume_loss 0.0136 overall 0.6096 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 2/12 lr 3.35e-08
+  ep 2 it 25/200 segmentation 0.5954 dice_volume_loss 0.0123 overall 0.6077 | 0.85 s/it
+  ep 2 it 50/200 segmentation 0.5958 dice_volume_loss 0.0133 overall 0.6091 | 0.85 s/it
+  ep 2 it 75/200 segmentation 0.5974 dice_volume_loss 0.0132 overall 0.6106 | 0.85 s/it
+  ep 2 it 100/200 segmentation 0.5978 dice_volume_loss 0.0120 overall 0.6098 | 0.86 s/it
+  ep 2 it 125/200 segmentation 0.5950 dice_volume_loss 0.0128 overall 0.6078 | 0.86 s/it
+  ep 2 it 150/200 segmentation 0.5919 dice_volume_loss 0.0135 overall 0.6054 | 0.86 s/it
+  ep 2 it 175/200 segmentation 0.5896 dice_volume_loss 0.0136 overall 0.6032 | 0.86 s/it
+  ep 2 it 200/200 segmentation 0.5898 dice_volume_loss 0.0136 overall 0.6034 | 0.86 s/it
+epoch 2 done in 172s; segmentation 0.5898 dice_volume_loss 0.0136 overall 0.6034 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 3/12 lr 2.48e-07
+  ep 3 it 25/200 segmentation 0.5987 dice_volume_loss 0.0115 overall 0.6101 | 0.85 s/it
+  ep 3 it 50/200 segmentation 0.5958 dice_volume_loss 0.0098 overall 0.6056 | 0.86 s/it
+  ep 3 it 75/200 segmentation 0.5940 dice_volume_loss 0.0115 overall 0.6056 | 0.86 s/it
+  ep 3 it 100/200 segmentation 0.5956 dice_volume_loss 0.0128 overall 0.6083 | 0.86 s/it
+  ep 3 it 125/200 segmentation 0.5924 dice_volume_loss 0.0128 overall 0.6053 | 0.86 s/it
+  ep 3 it 150/200 segmentation 0.5907 dice_volume_loss 0.0128 overall 0.6036 | 0.86 s/it
+  ep 3 it 175/200 segmentation 0.5897 dice_volume_loss 0.0129 overall 0.6025 | 0.86 s/it
+  ep 3 it 200/200 segmentation 0.5900 dice_volume_loss 0.0128 overall 0.6028 | 0.85 s/it
+epoch 3 done in 171s; segmentation 0.5900 dice_volume_loss 0.0128 overall 0.6028 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 4/12 lr 1.83e-06
+  ep 4 it 25/200 segmentation 0.6133 dice_volume_loss 0.0150 overall 0.6283 | 0.86 s/it
+  ep 4 it 50/200 segmentation 0.5999 dice_volume_loss 0.0164 overall 0.6164 | 0.87 s/it
+  ep 4 it 75/200 segmentation 0.5953 dice_volume_loss 0.0150 overall 0.6103 | 0.87 s/it
+  ep 4 it 100/200 segmentation 0.5920 dice_volume_loss 0.0147 overall 0.6068 | 0.87 s/it
+  ep 4 it 125/200 segmentation 0.5948 dice_volume_loss 0.0142 overall 0.6090 | 0.86 s/it
+  ep 4 it 150/200 segmentation 0.5915 dice_volume_loss 0.0134 overall 0.6049 | 0.87 s/it
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop  ep 4 it 175/200 segmentation 0.5892 dice_volume_loss 0.0133 overall 0.6025 | 0.87 s/it
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor caseTumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop  ep 4 it 200/200 segmentation 0.5885 dice_volume_loss 0.0135 overall 0.6020 | 0.86 s/it
+epoch 4 done in 173s; segmentation 0.5885 dice_volume_loss 0.0135 overall 0.6020 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 5/12 lr 1.35e-05
+  ep 5 it 25/200 segmentation 0.5744 dice_volume_loss 0.0116 overall 0.5860 | 0.85 s/it
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop  ep 5 it 50/200 segmentation 0.5708 dice_volume_loss 0.0125 overall 0.5833 | 0.86 s/it
+  ep 5 it 75/200 segmentation 0.5740 dice_volume_loss 0.0120 overall 0.5860 | 0.86 s/it
+  ep 5 it 100/200 segmentation 0.5802 dice_volume_loss 0.0114 overall 0.5917 | 0.86 s/it
+  ep 5 it 125/200 segmentation 0.5783 dice_volume_loss 0.0117 overall 0.5900 | 0.86 s/it
+  ep 5 it 150/200 segmentation 0.5784 dice_volume_loss 0.0120 overall 0.5904 | 0.85 s/it
+  ep 5 it 175/200 segmentation 0.5793 dice_volume_loss 0.0121 overall 0.5914 | 0.85 s/it
+  ep 5 it 200/200 segmentation 0.5808 dice_volume_loss 0.0123 overall 0.5931 | 0.85 s/it
+epoch 5 done in 171s; segmentation 0.5808 dice_volume_loss 0.0123 overall 0.5931 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 6/12 lr 1.00e-04
+  ep 6 it 25/200 segmentation 0.5783 dice_volume_loss 0.0138 overall 0.5920 | 0.86 s/it
+  ep 6 it 50/200 segmentation 0.5774 dice_volume_loss 0.0125 overall 0.5899 | 0.86 s/it
+  ep 6 it 75/200 segmentation 0.5888 dice_volume_loss 0.0133 overall 0.6021 | 0.86 s/it
+  ep 6 it 100/200 segmentation 0.5920 dice_volume_loss 0.0132 overall 0.6052 | 0.86 s/it
+  ep 6 it 125/200 segmentation 0.5925 dice_volume_loss 0.0134 overall 0.6059 | 0.86 s/it
+  ep 6 it 150/200 segmentation 0.5930 dice_volume_loss 0.0132 overall 0.6062 | 0.86 s/it
+  ep 6 it 175/200 segmentation 0.5912 dice_volume_loss 0.0128 overall 0.6040 | 0.86 s/it
+  ep 6 it 200/200 segmentation 0.5880 dice_volume_loss 0.0121 overall 0.6001 | 0.86 s/it
+epoch 6 done in 172s; segmentation 0.5880 dice_volume_loss 0.0121 overall 0.6001 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 7/12 lr 5.36e-05
+  ep 7 it 25/200 segmentation 0.5946 dice_volume_loss 0.0127 overall 0.6073 | 0.85 s/it
+  ep 7 it 50/200 segmentation 0.5952 dice_volume_loss 0.0140 overall 0.6092 | 0.86 s/it
+  ep 7 it 75/200 segmentation 0.5887 dice_volume_loss 0.0132 overall 0.6019 | 0.85 s/it
+  ep 7 it 100/200 segmentation 0.5893 dice_volume_loss 0.0125 overall 0.6019 | 0.86 s/it
+  ep 7 it 125/200 segmentation 0.5868 dice_volume_loss 0.0119 overall 0.5987 | 0.86 s/it
+  ep 7 it 150/200 segmentation 0.5897 dice_volume_loss 0.0109 overall 0.6007 | 0.86 s/it
+  ep 7 it 175/200 segmentation 0.5889 dice_volume_loss 0.0114 overall 0.6003 | 0.86 s/it
+  ep 7 it 200/200 segmentation 0.5907 dice_volume_loss 0.0118 overall 0.6025 | 0.86 s/it
+epoch 7 done in 172s; segmentation 0.5907 dice_volume_loss 0.0118 overall 0.6025 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 8/12 lr 4.55e-05
+  ep 8 it 25/200 segmentation 0.5559 dice_volume_loss 0.0119 overall 0.5679 | 0.85 s/it
+  ep 8 it 50/200 segmentation 0.5624 dice_volume_loss 0.0125 overall 0.5749 | 0.85 s/it
+  ep 8 it 75/200 segmentation 0.5654 dice_volume_loss 0.0116 overall 0.5770 | 0.85 s/it
+  ep 8 it 100/200 segmentation 0.5656 dice_volume_loss 0.0107 overall 0.5762 | 0.85 s/it
+  ep 8 it 125/200 segmentation 0.5658 dice_volume_loss 0.0108 overall 0.5765 | 0.85 s/it
+
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+  ep 8 it 150/200 segmentation 0.5661 dice_volume_loss 0.0116 overall 0.5777 | 0.85 s/it
+  ep 8 it 175/200 segmentation 0.5665 dice_volume_loss 0.0120 overall 0.5785 | 0.85 s/it
+
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+  ep 8 it 200/200 segmentation 0.5680 dice_volume_loss 0.0120 overall 0.5800 | 0.85 s/it
+epoch 8 done in 170s; segmentation 0.5680 dice_volume_loss 0.0120 overall 0.5800 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 9/12 lr 3.72e-05
+  ep 9 it 25/200 segmentation 0.5806 dice_volume_loss 0.0088 overall 0.5893 | 0.86 s/it
+  ep 9 it 50/200 segmentation 0.5778 dice_volume_loss 0.0082 overall 0.5861 | 0.86 s/it
+
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop  ep 9 it 75/200 segmentation 0.5731 dice_volume_loss 0.0089 overall 0.5820 | 0.86 s/it
+
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop  ep 9 it 100/200 segmentation 0.5695 dice_volume_loss 0.0101 overall 0.5796 | 0.86 s/it
+  ep 9 it 125/200 segmentation 0.5713 dice_volume_loss 0.0105 overall 0.5818 | 0.86 s/it
+  ep 9 it 150/200 segmentation 0.5694 dice_volume_loss 0.0109 overall 0.5803 | 0.86 s/it
+  ep 9 it 175/200 segmentation 0.5732 dice_volume_loss 0.0108 overall 0.5839 | 0.86 s/it
+  ep 9 it 200/200 segmentation 0.5727 dice_volume_loss 0.0102 overall 0.5829 | 0.86 s/it
+epoch 9 done in 172s; segmentation 0.5727 dice_volume_loss 0.0102 overall 0.5829 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 10/12 lr 2.87e-05
+  ep 10 it 25/200 segmentation 0.5401 dice_volume_loss 0.0101 overall 0.5502 | 0.85 s/it
+  ep 10 it 50/200 segmentation 0.5490 dice_volume_loss 0.0130 overall 0.5619 | 0.85 s/it
+  ep 10 it 75/200 segmentation 0.5465 dice_volume_loss 0.0116 overall 0.5581 | 0.85 s/it
+  ep 10 it 100/200 segmentation 0.5566 dice_volume_loss 0.0121 overall 0.5687 | 0.85 s/it
+  ep 10 it 125/200 segmentation 0.5557 dice_volume_loss 0.0119 overall 0.5676 | 0.85 s/it
+  ep 10 it 150/200 segmentation 0.5610 dice_volume_loss 0.0110 overall 0.5720 | 0.85 s/it
+  ep 10 it 175/200 segmentation 0.5609 dice_volume_loss 0.0107 overall 0.5715 | 0.85 s/it
+  ep 10 it 200/200 segmentation 0.5589 dice_volume_loss 0.0115 overall 0.5704 | 0.85 s/it
+epoch 10 done in 171s; segmentation 0.5589 dice_volume_loss 0.0115 overall 0.5704 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 11/12 lr 1.99e-05
+  ep 11 it 25/200 segmentation 0.5556 dice_volume_loss 0.0113 overall 0.5669 | 0.86 s/it
+  ep 11 it 50/200 segmentation 0.5552 dice_volume_loss 0.0116 overall 0.5668 | 0.86 s/it
+  ep 11 it 75/200 segmentation 0.5561 dice_volume_loss 0.0112 overall 0.5673 | 0.85 s/it
+  ep 11 it 100/200 segmentation 0.5568 dice_volume_loss 0.0104 overall 0.5672 | 0.86 s/it
+  ep 11 it 125/200 segmentation 0.5587 dice_volume_loss 0.0105 overall 0.5692 | 0.86 s/it
+  ep 11 it 150/200 segmentation 0.5586 dice_volume_loss 0.0116 overall 0.5702 | 0.86 s/it
+  ep 11 it 175/200 segmentation 0.5594 dice_volume_loss 0.0114 overall 0.5708 | 0.86 s/it
+  ep 11 it 200/200 segmentation 0.5618 dice_volume_loss 0.0115 overall 0.5733 | 0.86 s/it
+epoch 11 done in 172s; segmentation 0.5618 dice_volume_loss 0.0115 overall 0.5733 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+Starting epoch 12/12 lr 1.07e-05
+  ep 12 it 25/200 segmentation 0.5551 dice_volume_loss 0.0110 overall 0.5661 | 0.86 s/it
+  ep 12 it 50/200 segmentation 0.5556 dice_volume_loss 0.0080 overall 0.5636 | 0.86 s/it
+  ep 12 it 75/200 segmentation 0.5583 dice_volume_loss 0.0085 overall 0.5668 | 0.86 s/it
+  ep 12 it 100/200 segmentation 0.5500 dice_volume_loss 0.0090 overall 0.5590 | 0.86 s/it
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop  ep 12 it 125/200 segmentation 0.5503 dice_volume_loss 0.0090 overall 0.5593 | 0.86 s/it
+  ep 12 it 150/200 segmentation 0.5541 dice_volume_loss 0.0091 overall 0.5632 | 0.86 s/it
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop  ep 12 it 175/200 segmentation 0.5600 dice_volume_loss 0.0092 overall 0.5692 | 0.86 s/it
+  ep 12 it 200/200 segmentation 0.5620 dice_volume_loss 0.0089 overall 0.5709 | 0.85 s/it
+epoch 12 done in 171s; segmentation 0.5620 dice_volume_loss 0.0089 overall 0.5709 | crops {'on_segment': 0, 'failed': 0, 'random': 0}
+
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Attempting tumor crop
+Tumor case
+Background crop
+Non-tumor case
+Attempting organ crop
+Foreground classes: [0]
+Cropping on organ (not tumor): 0

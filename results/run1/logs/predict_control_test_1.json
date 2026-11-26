@@ -1,0 +1,1 @@
+{"ckpt": "/kaggle/working/exp/control/latest.pth", "ids": "/kaggle/working/rsuper_data/meta/ids_test.csv", "img_dir": "/kaggle/working/rsuper_data/eval_npz", "save_dir": "/kaggle/working/results/test/control", "window": 96, "overlap": 0.5, "gpu": 1, "part": 1, "parts": 2}

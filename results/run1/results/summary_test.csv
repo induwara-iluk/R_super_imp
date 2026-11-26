@@ -1,0 +1,9 @@
+model,variant,dice_lesion_mean,dice_lesion_sd,dice_pancreas,tp,fp,n_gt_lesions,patient_sens,n,lesion_recall,lesion_precision,lesion_F1
+baseline,organ_masked,0.04,0.056,0.171,33,1917,51,1.0,50,0.647,0.017,0.033
+baseline,raw,0.04,0.056,0.171,33,1919,51,1.0,50,0.647,0.017,0.033
+control,organ_masked,0.035,0.053,0.153,34,2174,51,1.0,50,0.667,0.015,0.03
+control,raw,0.035,0.053,0.153,34,2176,51,1.0,50,0.667,0.015,0.03
+volume,organ_masked,0.033,0.05,0.15,36,2347,51,1.0,50,0.706,0.015,0.03
+volume,raw,0.033,0.05,0.15,36,2350,51,1.0,50,0.706,0.015,0.03
+volume_ball,organ_masked,0.037,0.053,0.151,38,2287,51,1.0,50,0.745,0.016,0.032
+volume_ball,raw,0.037,0.053,0.151,38,2288,51,1.0,50,0.745,0.016,0.032

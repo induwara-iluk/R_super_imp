@@ -1,0 +1,21 @@
+{
+ "base_epochs": 24,
+ "ft_epochs": 12,
+ "base_cap_h": 2.85,
+ "ft_cap_h": 3.0,
+ "projected_h": {
+  "baseline": 2.2,
+  "each_finetune": 2.32
+ },
+ "hours_left_at_plan": 10.73,
+ "probe": {
+  "probe_baseline": {
+   "sec_per_iter": 1.498,
+   "peak_gpu_mib": 2411
+  },
+  "probe_volume_ball": {
+   "sec_per_iter": 3.169,
+   "peak_gpu_mib": 2809
+  }
+ }
+}

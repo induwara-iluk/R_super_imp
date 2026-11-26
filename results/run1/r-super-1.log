@@ -1,0 +1,253 @@
+[{"stream_name":"stderr","time":8.922842947,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.922891532,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.922898208,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.922902808,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.564755246,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.564812102,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.564818668000001,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.564823472,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.755578299,"data":"DATA = /kaggle/working/rsuper_data | prepare data this run: True\n"}
+,{"stream_name":"stdout","time":20.503977002,"data":"torch 2.11.0+cu130 | CUDA True | GPUs 2\n"}
+,{"stream_name":"stdout","time":20.504022431,"data":"name, memory.total [MiB]\n"}
+,{"stream_name":"stdout","time":20.504029146,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":20.504033423,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":20.504037592,"data":"\n"}
+,{"stream_name":"stdout","time":20.504041476,"data":"Filesystem      Size  Used Avail Use% Mounted on\n"}
+,{"stream_name":"stdout","time":20.504045084,"data":"/dev/loop2       20G  572K   20G   1% /kaggle/working\n"}
+,{"stream_name":"stdout","time":20.504049394,"data":"overlay         8.0T  5.6T  2.5T  70% /\n"}
+,{"stream_name":"stdout","time":20.504053122,"data":"\n"}
+,{"stream_name":"stderr","time":21.796940432,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":21.796979726,"data":"\n"}
+,{"stream_name":"stderr","time":21.796985126,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":75.979741085,"data":"/kaggle/temp/msd/MSD_Decathlon/Dataset007_Pancreas.zip 12.21 GB\n"}
+,{"stream_name":"stdout","time":76.051325044,"data":"Writing /kaggle/working/rsuper_msd.py\n"}
+,{"stream_name":"stdout","time":99.598801833,"data":"281 cases, 281 with tumour\n"}
+,{"stream_name":"stdout","time":99.59883382,"data":"{'test': 50, 'val': 15, 'mask_train': 50, 'report_only': 150, 'unused': 16}\n"}
+,{"stream_name":"stdout","time":1827.647828269,"data":"converted 265 cases in 28.8 min; failed: []\n"}
+,{"stream_name":"stdout","time":1827.647909764,"data":"  Encrypted Accession Number Tumor ID     Organ                     Tumor Type Tumor Location Tumor Size (mm) Type Certainty        BDMAP ID  no lesion Standardized Organ Standardized Location Unknow Tumor Size\n"}
+,{"stream_name":"stdout","time":1827.64792097,"data":"0         SYN_BDMAP_00000001  tumor 1  pancreas  pancreatic mass (MSD label 2)           head     36.0 x 29.0      synthetic  BDMAP_00000001      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.647927599,"data":"1         SYN_BDMAP_00000004  tumor 1  pancreas  pancreatic mass (MSD label 2)           head     60.0 x 47.0      synthetic  BDMAP_00000004      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.647946835,"data":"2         SYN_BDMAP_00000010  tumor 1  pancreas  pancreatic mass (MSD label 2)           head     59.0 x 45.0      synthetic  BDMAP_00000010      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.647953627,"data":"3         SYN_BDMAP_00000012  tumor 1  pancreas  pancreatic mass (MSD label 2)           head     35.0 x 28.0      synthetic  BDMAP_00000012      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.647959636,"data":"4         SYN_BDMAP_00000021  tumor 1  pancreas  pancreatic mass (MSD label 2)           head     30.0 x 24.0      synthetic  BDMAP_00000021      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.647964887,"data":"5         SYN_BDMAP_00000021  tumor 2  pancreas  pancreatic mass (MSD label 2)           head      13.0 x 8.0      synthetic  BDMAP_00000021      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.647969946,"data":"6         SYN_BDMAP_00000024  tumor 1  pancreas  pancreatic mass (MSD label 2)           head     41.0 x 32.0      synthetic  BDMAP_00000024      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.647974974,"data":"7         SYN_BDMAP_00000028  tumor 1  pancreas  pancreatic mass (MSD label 2)           head     19.0 x 13.0      synthetic  BDMAP_00000028      False           pancreas                  head                no\n"}
+,{"stream_name":"stdout","time":1827.728768323,"data":"               n  tumours_mean  lesion_vox_median\n"}
+,{"stream_name":"stdout","time":1827.728818435,"data":"split                                            \n"}
+,{"stream_name":"stdout","time":1827.728825349,"data":"mask_train    50      1.000000             5982.0\n"}
+,{"stream_name":"stdout","time":1827.728830097,"data":"report_only  150      1.006667             5833.0\n"}
+,{"stream_name":"stdout","time":1827.728835063,"data":"test          50      1.020000             4585.5\n"}
+,{"stream_name":"stdout","time":1827.728851688,"data":"val           15      1.000000             6130.0\n"}
+,{"stream_name":"stdout","time":1827.72885644,"data":"cases where the body crop removed pancreas voxels: 0\n"}
+,{"stream_name":"stdout","time":1827.930570442,"data":"report-volume / true-volume at sigma=0: median 1.12, IQR 0.88-1.37, within +-10%: 22%\n"}
+,{"stream_name":"stdout","time":1827.930613166,"data":"report locations:\n"}
+,{"stream_name":"stdout","time":1827.93061921,"data":" head           180\n"}
+,{"stream_name":"stdout","time":1827.930623252,"data":"tail            33\n"}
+,{"stream_name":"stdout","time":1827.930627546,"data":"body            24\n"}
+,{"stream_name":"stdout","time":1827.930631009,"data":"head / body     18\n"}
+,{"stream_name":"stdout","time":1827.930634522,"data":"body / tail     12\n"}
+,{"stream_name":"stdout","time":1830.154941524,"data":"9.6G\t/kaggle/working/rsuper_data\n"}
+,{"stream_name":"stdout","time":1830.154973972,"data":"\n"}
+,{"stream_name":"stdout","time":1830.319091539,"data":"Writing /kaggle/working/rsuper_core.py\n"}
+,{"stream_name":"stdout","time":1830.436488754,"data":"[probe_baseline] attempt 0 (from epoch 0, target 1)\n"}
+,{"stream_name":"stdout","time":1849.819251772,"data":"npy cache ready (50 mask + 0 report cases, 14s)\n"}
+,{"stream_name":"stdout","time":1859.747785659,"data":"device cuda x2 | amp True | loss dice | report weight 0.0 | tolerance 0.1 | params 16.5 M\n"}
+,{"stream_name":"stdout","time":1859.833703095,"data":"Starting epoch 1/1 lr 4.54e-08\n"}
+,{"stream_name":"stdout","time":1898.598472904,"data":"epoch 1 done in 39s; segmentation 1.6861 report 0.0000 overall 1.6861 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":1904.96269091,"data":"[probe_baseline] exit 0 after 1.2 min; checkpoint epoch 1/1\n"}
+,{"stream_name":"stdout","time":1905.16355071,"data":"probe_baseline {'sec_per_iter': 1.498, 'peak_gpu_mib': 2411}\n"}
+,{"stream_name":"stdout","time":1905.166193637,"data":"[probe_volume_ball] attempt 0 (from epoch 0, target 1)\n"}
+,{"stream_name":"stdout","time":1977.691437967,"data":"npy cache ready (50 mask + 150 report cases, 70s)\n"}
+,{"stream_name":"stdout","time":1980.170408671,"data":"initialised from /kaggle/working/exp/probe_baseline/latest.pth (epoch 1)\n"}
+,{"stream_name":"stdout","time":1980.171409612,"data":"device cuda x2 | amp True | loss ball_dice_last | report weight 0.1 | tolerance 0.1 | params 16.5 M\n"}
+,{"stream_name":"stdout","time":1980.237215141,"data":"Starting epoch 1/1 lr 4.54e-09\n"}
+,{"stream_name":"stdout","time":2070.239858989,"data":"epoch 1 done in 90s; segmentation 1.6853 ball_loss_bce 0.0335 ball_loss_dice 0.0494 dice_volume_loss 0.0138 overall 1.7820 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2075.479036452,"data":"[probe_volume_ball] exit 0 after 2.8 min; checkpoint epoch 1/1\n"}
+,{"stream_name":"stdout","time":2075.667450531,"data":"probe_volume_ball {'sec_per_iter': 3.169, 'peak_gpu_mib': 2809}\n"}
+,{"stream_name":"stdout","time":2075.679325427,"data":"[probe_volume_ball] last epoch report crops: {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2075.700647596,"data":"{\n"}
+,{"stream_name":"stdout","time":2075.700680574,"data":" \"base_epochs\": 24,\n"}
+,{"stream_name":"stdout","time":2075.700687269,"data":" \"ft_epochs\": 12,\n"}
+,{"stream_name":"stdout","time":2075.700692467,"data":" \"base_cap_h\": 2.85,\n"}
+,{"stream_name":"stdout","time":2075.700706443,"data":" \"ft_cap_h\": 3.0,\n"}
+,{"stream_name":"stdout","time":2075.700711224,"data":" \"projected_h\": {\n"}
+,{"stream_name":"stdout","time":2075.700715544,"data":"  \"baseline\": 2.2,\n"}
+,{"stream_name":"stdout","time":2075.700719751,"data":"  \"each_finetune\": 2.32\n"}
+,{"stream_name":"stdout","time":2075.70072532,"data":" },\n"}
+,{"stream_name":"stdout","time":2075.700730092,"data":" \"hours_left_at_plan\": 10.73,\n"}
+,{"stream_name":"stdout","time":2075.700734594,"data":" \"probe\": {\n"}
+,{"stream_name":"stdout","time":2075.700739273,"data":"  \"probe_baseline\": {\n"}
+,{"stream_name":"stdout","time":2075.700744026,"data":"   \"sec_per_iter\": 1.498,\n"}
+,{"stream_name":"stdout","time":2075.700748361,"data":"   \"peak_gpu_mib\": 2411\n"}
+,{"stream_name":"stdout","time":2075.700752627,"data":"  },\n"}
+,{"stream_name":"stdout","time":2075.700757035,"data":"  \"probe_volume_ball\": {\n"}
+,{"stream_name":"stdout","time":2075.70076118,"data":"   \"sec_per_iter\": 3.169,\n"}
+,{"stream_name":"stdout","time":2075.700765304,"data":"   \"peak_gpu_mib\": 2809\n"}
+,{"stream_name":"stdout","time":2075.700770154,"data":"  }\n"}
+,{"stream_name":"stdout","time":2075.70077475,"data":" }\n"}
+,{"stream_name":"stdout","time":2075.700779582,"data":"}\n"}
+,{"stream_name":"stdout","time":2075.749090804,"data":"[baseline] attempt 0 (from epoch 0, target 24)\n"}
+,{"stream_name":"stdout","time":2078.731429617,"data":"npy cache ready (50 mask + 0 report cases, 0s)\n"}
+,{"stream_name":"stdout","time":2080.496210954,"data":"device cuda x2 | amp True | loss dice | report weight 0.0 | tolerance 0.1 | params 16.5 M\n"}
+,{"stream_name":"stdout","time":2080.571140477,"data":"Starting epoch 1/24 lr 4.54e-08\n"}
+,{"stream_name":"stdout","time":2209.66218697,"data":"epoch 1 done in 129s; segmentation 1.6843 report 0.0000 overall 1.6843 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2209.667799375,"data":"Starting epoch 2/24 lr 3.35e-07\n"}
+,{"stream_name":"stdout","time":2322.025499888,"data":"epoch 2 done in 112s; segmentation 1.6771 report 0.0000 overall 1.6771 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2322.02783311,"data":"Starting epoch 3/24 lr 2.48e-06\n"}
+,{"stream_name":"stdout","time":2434.888477608,"data":"epoch 3 done in 113s; segmentation 1.6283 report 0.0000 overall 1.6283 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2434.888536518,"data":"Starting epoch 4/24 lr 1.83e-05\n"}
+,{"stream_name":"stdout","time":2545.526258602,"data":"epoch 4 done in 111s; segmentation 1.5208 report 0.0000 overall 1.5208 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2545.528737334,"data":"Starting epoch 5/24 lr 1.35e-04\n"}
+,{"stream_name":"stdout","time":2658.690044267,"data":"epoch 5 done in 113s; segmentation 1.3811 report 0.0000 overall 1.3811 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2658.692195276,"data":"Starting epoch 6/24 lr 1.00e-03\n"}
+,{"stream_name":"stdout","time":2771.153843401,"data":"epoch 6 done in 112s; segmentation 1.1272 report 0.0000 overall 1.1272 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2771.155537397,"data":"Starting epoch 7/24 lr 7.72e-04\n"}
+,{"stream_name":"stdout","time":2882.190499521,"data":"epoch 7 done in 111s; segmentation 1.0161 report 0.0000 overall 1.0161 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2882.191619697,"data":"Starting epoch 8/24 lr 7.33e-04\n"}
+,{"stream_name":"stdout","time":2992.380854499,"data":"epoch 8 done in 110s; segmentation 0.9435 report 0.0000 overall 0.9435 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":2992.383383337,"data":"Starting epoch 9/24 lr 6.94e-04\n"}
+,{"stream_name":"stdout","time":3103.647452365,"data":"epoch 9 done in 111s; segmentation 0.8711 report 0.0000 overall 0.8711 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3103.648324486,"data":"Starting epoch 10/24 lr 6.55e-04\n"}
+,{"stream_name":"stdout","time":3215.235199077,"data":"epoch 10 done in 112s; segmentation 0.7966 report 0.0000 overall 0.7966 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3215.236879937,"data":"Starting epoch 11/24 lr 6.16e-04\n"}
+,{"stream_name":"stdout","time":3327.366344278,"data":"epoch 11 done in 112s; segmentation 0.7594 report 0.0000 overall 0.7594 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3327.368662262,"data":"Starting epoch 12/24 lr 5.76e-04\n"}
+,{"stream_name":"stdout","time":3437.021780502,"data":"epoch 12 done in 110s; segmentation 0.7416 report 0.0000 overall 0.7416 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3437.023191226,"data":"Starting epoch 13/24 lr 5.36e-04\n"}
+,{"stream_name":"stdout","time":3548.849867154,"data":"epoch 13 done in 112s; segmentation 0.7036 report 0.0000 overall 0.7036 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3548.851316696,"data":"Starting epoch 14/24 lr 4.96e-04\n"}
+,{"stream_name":"stdout","time":3658.641334341,"data":"epoch 14 done in 110s; segmentation 0.6956 report 0.0000 overall 0.6956 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3658.642971172,"data":"Starting epoch 15/24 lr 4.55e-04\n"}
+,{"stream_name":"stdout","time":3768.592666906,"data":"epoch 15 done in 110s; segmentation 0.6648 report 0.0000 overall 0.6648 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3768.594859143,"data":"Starting epoch 16/24 lr 4.14e-04\n"}
+,{"stream_name":"stdout","time":3879.588924115,"data":"epoch 16 done in 111s; segmentation 0.6441 report 0.0000 overall 0.6441 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3879.592643449,"data":"Starting epoch 17/24 lr 3.72e-04\n"}
+,{"stream_name":"stdout","time":3991.05565579,"data":"epoch 17 done in 111s; segmentation 0.6285 report 0.0000 overall 0.6285 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":3991.057237156,"data":"Starting epoch 18/24 lr 3.30e-04\n"}
+,{"stream_name":"stdout","time":4100.594223096,"data":"epoch 18 done in 110s; segmentation 0.6116 report 0.0000 overall 0.6116 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4100.594457618,"data":"Starting epoch 19/24 lr 2.87e-04\n"}
+,{"stream_name":"stdout","time":4208.7812937,"data":"epoch 19 done in 108s; segmentation 0.5770 report 0.0000 overall 0.5770 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4208.782791388,"data":"Starting epoch 20/24 lr 2.44e-04\n"}
+,{"stream_name":"stdout","time":4319.943262241,"data":"epoch 20 done in 111s; segmentation 0.5606 report 0.0000 overall 0.5606 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4319.943953248,"data":"Starting epoch 21/24 lr 1.99e-04\n"}
+,{"stream_name":"stdout","time":4430.516455879,"data":"epoch 21 done in 111s; segmentation 0.5632 report 0.0000 overall 0.5632 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4430.518657959,"data":"Starting epoch 22/24 lr 1.54e-04\n"}
+,{"stream_name":"stdout","time":4541.268363901,"data":"epoch 22 done in 111s; segmentation 0.5470 report 0.0000 overall 0.5470 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4541.271981842,"data":"Starting epoch 23/24 lr 1.07e-04\n"}
+,{"stream_name":"stdout","time":4652.933803732,"data":"epoch 23 done in 112s; segmentation 0.5349 report 0.0000 overall 0.5349 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4652.936022524,"data":"Starting epoch 24/24 lr 5.73e-05\n"}
+,{"stream_name":"stdout","time":4764.942331224,"data":"epoch 24 done in 112s; segmentation 0.5210 report 0.0000 overall 0.5210 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4767.47687633,"data":"[baseline] exit 0 after 44.9 min; checkpoint epoch 24/24\n"}
+,{"stream_name":"stdout","time":4767.752991476,"data":"[control] attempt 0 (from epoch 0, target 12)\n"}
+,{"stream_name":"stdout","time":4770.591391557,"data":"npy cache ready (50 mask + 150 report cases, 0s)\n"}
+,{"stream_name":"stdout","time":4772.759526065,"data":"initialised from /kaggle/working/exp/baseline/latest.pth (epoch 24)\n"}
+,{"stream_name":"stdout","time":4772.760550197,"data":"device cuda x2 | amp True | loss dice | report weight 0.0 | tolerance 0.1 | params 16.5 M\n"}
+,{"stream_name":"stdout","time":4772.834927754,"data":"Starting epoch 1/12 lr 4.54e-09\n"}
+,{"stream_name":"stdout","time":4898.284440614,"data":"epoch 1 done in 125s; segmentation 0.5960 report 0.0000 overall 0.5960 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":4898.28651503,"data":"Starting epoch 2/12 lr 3.35e-08\n"}
+,{"stream_name":"stdout","time":5005.824263447,"data":"epoch 2 done in 108s; segmentation 0.5898 report 0.0000 overall 0.5898 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5005.826229783,"data":"Starting epoch 3/12 lr 2.48e-07\n"}
+,{"stream_name":"stdout","time":5108.193324161,"data":"epoch 3 done in 102s; segmentation 0.5900 report 0.0000 overall 0.5900 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5108.194814873,"data":"Starting epoch 4/12 lr 1.83e-06\n"}
+,{"stream_name":"stdout","time":5210.748284064,"data":"epoch 4 done in 103s; segmentation 0.5885 report 0.0000 overall 0.5885 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5210.748326493,"data":"Starting epoch 5/12 lr 1.35e-05\n"}
+,{"stream_name":"stdout","time":5313.03123885,"data":"epoch 5 done in 102s; segmentation 0.5808 report 0.0000 overall 0.5808 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5313.03293748,"data":"Starting epoch 6/12 lr 1.00e-04\n"}
+,{"stream_name":"stdout","time":5420.696813618,"data":"epoch 6 done in 108s; segmentation 0.5886 report 0.0000 overall 0.5886 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5420.698618532,"data":"Starting epoch 7/12 lr 5.36e-05\n"}
+,{"stream_name":"stdout","time":5524.818401363,"data":"epoch 7 done in 104s; segmentation 0.5901 report 0.0000 overall 0.5901 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5524.821096669,"data":"Starting epoch 8/12 lr 4.55e-05\n"}
+,{"stream_name":"stdout","time":5625.948311717,"data":"epoch 8 done in 101s; segmentation 0.5676 report 0.0000 overall 0.5676 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5625.949511159,"data":"Starting epoch 9/12 lr 3.72e-05\n"}
+,{"stream_name":"stdout","time":5728.938981207,"data":"epoch 9 done in 103s; segmentation 0.5716 report 0.0000 overall 0.5716 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5728.942055956,"data":"Starting epoch 10/12 lr 2.87e-05\n"}
+,{"stream_name":"stdout","time":5832.665202566,"data":"epoch 10 done in 104s; segmentation 0.5585 report 0.0000 overall 0.5585 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5832.665469224,"data":"Starting epoch 11/12 lr 1.99e-05\n"}
+,{"stream_name":"stdout","time":5934.746208992,"data":"epoch 11 done in 102s; segmentation 0.5609 report 0.0000 overall 0.5609 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":5934.749333266,"data":"Starting epoch 12/12 lr 1.07e-05\n"}
+,{"stream_name":"stdout","time":6038.479516875,"data":"epoch 12 done in 104s; segmentation 0.5616 report 0.0000 overall 0.5616 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":6041.824367744,"data":"[control] exit 0 after 21.2 min; checkpoint epoch 12/12\n"}
+,{"stream_name":"stdout","time":6042.029724406,"data":"[control] last epoch report crops: {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":6042.029771923,"data":"[volume] attempt 0 (from epoch 0, target 12)\n"}
+,{"stream_name":"stdout","time":6046.086246999,"data":"npy cache ready (50 mask + 150 report cases, 0s)\n"}
+,{"stream_name":"stdout","time":6048.13897336,"data":"initialised from /kaggle/working/exp/baseline/latest.pth (epoch 24)\n"}
+,{"stream_name":"stdout","time":6048.1399406,"data":"device cuda x2 | amp True | loss dice | report weight 0.1 | tolerance 0.1 | params 16.5 M\n"}
+,{"stream_name":"stdout","time":6048.217655962,"data":"Starting epoch 1/12 lr 4.54e-09\n"}
+,{"stream_name":"stdout","time":6237.214585916,"data":"epoch 1 done in 189s; segmentation 0.5960 dice_volume_loss 0.0136 overall 0.6096 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":6237.217107146,"data":"Starting epoch 2/12 lr 3.35e-08\n"}
+,{"stream_name":"stdout","time":6409.075837828,"data":"epoch 2 done in 172s; segmentation 0.5898 dice_volume_loss 0.0136 overall 0.6034 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":6409.075887411,"data":"Starting epoch 3/12 lr 2.48e-07\n"}
+,{"stream_name":"stdout","time":6580.40529409,"data":"epoch 3 done in 171s; segmentation 0.5900 dice_volume_loss 0.0128 overall 0.6028 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":6580.410056306,"data":"Starting epoch 4/12 lr 1.83e-06\n"}
+,{"stream_name":"stdout","time":6753.47437329,"data":"epoch 4 done in 173s; segmentation 0.5885 dice_volume_loss 0.0135 overall 0.6020 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":6753.47441528,"data":"Starting epoch 5/12 lr 1.35e-05\n"}
+,{"stream_name":"stdout","time":6924.648246082,"data":"epoch 5 done in 171s; segmentation 0.5808 dice_volume_loss 0.0123 overall 0.5931 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":6924.648312806,"data":"Starting epoch 6/12 lr 1.00e-04\n"}
+,{"stream_name":"stdout","time":7096.601932876,"data":"epoch 6 done in 172s; segmentation 0.5880 dice_volume_loss 0.0121 overall 0.6001 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":7096.603697275,"data":"Starting epoch 7/12 lr 5.36e-05\n"}
+,{"stream_name":"stdout","time":7268.52957718,"data":"epoch 7 done in 172s; segmentation 0.5907 dice_volume_loss 0.0118 overall 0.6025 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":7268.529642123,"data":"Starting epoch 8/12 lr 4.55e-05\n"}
+,{"stream_name":"stdout","time":7438.891747441,"data":"epoch 8 done in 170s; segmentation 0.5680 dice_volume_loss 0.0120 overall 0.5800 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":7438.894530936,"data":"Starting epoch 9/12 lr 3.72e-05\n"}
+,{"stream_name":"stdout","time":7610.934362012,"data":"epoch 9 done in 172s; segmentation 0.5727 dice_volume_loss 0.0102 overall 0.5829 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":7610.934411534,"data":"Starting epoch 10/12 lr 2.87e-05\n"}
+,{"stream_name":"stdout","time":7781.441616871,"data":"epoch 10 done in 171s; segmentation 0.5589 dice_volume_loss 0.0115 overall 0.5704 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":7781.441669476,"data":"Starting epoch 11/12 lr 1.99e-05\n"}
+,{"stream_name":"stdout","time":7953.052326614,"data":"epoch 11 done in 172s; segmentation 0.5618 dice_volume_loss 0.0115 overall 0.5733 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":7953.052976041,"data":"Starting epoch 12/12 lr 1.07e-05\n"}
+,{"stream_name":"stdout","time":8124.302561998,"data":"epoch 12 done in 171s; segmentation 0.5620 dice_volume_loss 0.0089 overall 0.5709 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":8127.211598147,"data":"[volume] exit 0 after 34.8 min; checkpoint epoch 12/12\n"}
+,{"stream_name":"stdout","time":8127.414495955,"data":"[volume] last epoch report crops: {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":8127.414546154,"data":"[volume_ball] attempt 0 (from epoch 0, target 12)\n"}
+,{"stream_name":"stdout","time":8130.133044838,"data":"npy cache ready (50 mask + 150 report cases, 0s)\n"}
+,{"stream_name":"stdout","time":8132.201297744,"data":"initialised from /kaggle/working/exp/baseline/latest.pth (epoch 24)\n"}
+,{"stream_name":"stdout","time":8132.202330265,"data":"device cuda x2 | amp True | loss ball_dice_last | report weight 0.1 | tolerance 0.1 | params 16.5 M\n"}
+,{"stream_name":"stdout","time":8132.280831372,"data":"Starting epoch 1/12 lr 4.54e-09\n"}
+,{"stream_name":"stdout","time":8582.439007316,"data":"epoch 1 done in 450s; segmentation 0.5960 ball_loss_bce 0.0017 ball_loss_dice 0.0406 dice_volume_loss 0.0069 overall 0.6451 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":8582.441908451,"data":"Starting epoch 2/12 lr 3.35e-08\n"}
+,{"stream_name":"stdout","time":9021.657386621,"data":"epoch 2 done in 439s; segmentation 0.5898 ball_loss_bce 0.0016 ball_loss_dice 0.0394 dice_volume_loss 0.0069 overall 0.6378 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":9021.65894121,"data":"Starting epoch 3/12 lr 2.48e-07\n"}
+,{"stream_name":"stdout","time":9440.492291263,"data":"epoch 3 done in 419s; segmentation 0.5900 ball_loss_bce 0.0014 ball_loss_dice 0.0393 dice_volume_loss 0.0065 overall 0.6373 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":9440.493650584,"data":"Starting epoch 4/12 lr 1.83e-06\n"}
+,{"stream_name":"stdout","time":9882.571084308,"data":"epoch 4 done in 442s; segmentation 0.5884 ball_loss_bce 0.0017 ball_loss_dice 0.0397 dice_volume_loss 0.0069 overall 0.6367 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":9882.574003357,"data":"Starting epoch 5/12 lr 1.35e-05\n"}
+,{"stream_name":"stdout","time":10285.992318229,"data":"epoch 5 done in 403s; segmentation 0.5811 ball_loss_bce 0.0014 ball_loss_dice 0.0391 dice_volume_loss 0.0064 overall 0.6279 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":10285.993477927,"data":"Starting epoch 6/12 lr 1.00e-04\n"}
+,{"stream_name":"stdout","time":10690.773219992,"data":"epoch 6 done in 405s; segmentation 0.5885 ball_loss_bce 0.0012 ball_loss_dice 0.0373 dice_volume_loss 0.0063 overall 0.6333 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":10690.774548948,"data":"Starting epoch 7/12 lr 5.36e-05\n"}
+,{"stream_name":"stdout","time":11115.003451144,"data":"epoch 7 done in 424s; segmentation 0.5909 ball_loss_bce 0.0015 ball_loss_dice 0.0370 dice_volume_loss 0.0061 overall 0.6355 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":11115.004277267,"data":"Starting epoch 8/12 lr 4.55e-05\n"}
+,{"stream_name":"stdout","time":11552.142319001,"data":"epoch 8 done in 437s; segmentation 0.5685 ball_loss_bce 0.0014 ball_loss_dice 0.0378 dice_volume_loss 0.0062 overall 0.6139 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":11552.142377472,"data":"Starting epoch 9/12 lr 3.72e-05\n"}
+,{"stream_name":"stdout","time":11962.832358427,"data":"epoch 9 done in 411s; segmentation 0.5729 ball_loss_bce 0.0012 ball_loss_dice 0.0373 dice_volume_loss 0.0052 overall 0.6165 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":11962.835681682,"data":"Starting epoch 10/12 lr 2.87e-05\n"}
+,{"stream_name":"stdout","time":12409.146258054,"data":"epoch 10 done in 446s; segmentation 0.5589 ball_loss_bce 0.0015 ball_loss_dice 0.0369 dice_volume_loss 0.0059 overall 0.6032 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":12409.146505325,"data":"Starting epoch 11/12 lr 1.99e-05\n"}
+,{"stream_name":"stdout","time":12808.227152859,"data":"epoch 11 done in 399s; segmentation 0.5620 ball_loss_bce 0.0011 ball_loss_dice 0.0380 dice_volume_loss 0.0061 overall 0.6071 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":12808.228704079,"data":"Starting epoch 12/12 lr 1.07e-05\n"}
+,{"stream_name":"stdout","time":13223.91515532,"data":"epoch 12 done in 416s; segmentation 0.5624 ball_loss_bce 0.0012 ball_loss_dice 0.0378 dice_volume_loss 0.0046 overall 0.6059 | crops {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":13226.850967583,"data":"[volume_ball] exit 0 after 85.0 min; checkpoint epoch 12/12\n"}
+,{"stream_name":"stdout","time":13227.071276497,"data":"[volume_ball] last epoch report crops: {'on_segment': 0, 'failed': 0, 'random': 0}\n"}
+,{"stream_name":"stdout","time":13606.324927376,"data":"baseline predict exit codes [0, 0] (6.3 min)\n"}
+,{"stream_name":"stdout","time":14389.889140548,"data":"control predict exit codes [0, 0] (6.2 min)\n"}
+,{"stream_name":"stdout","time":15179.999002564,"data":"volume predict exit codes [0, 0] (6.2 min)\n"}
+,{"stream_name":"stdout","time":15977.43631956,"data":"volume_ball predict exit codes [0, 0] (6.1 min)\n"}
+,{"stream_name":"stdout","time":16405.354300061,"data":"total time 4.55 h\n"}
+,{"stream_name":"stdout","time":16405.354348027,"data":"1011M\t/kaggle/working/exp\n"}
+,{"stream_name":"stdout","time":16405.354356503,"data":"94M\t/kaggle/working/results\n"}
+,{"stream_name":"stdout","time":16405.354362223,"data":"1.1M\t/kaggle/working/logs\n"}
+,{"stream_name":"stdout","time":16405.354367924,"data":"\n"}
+,{"stream_name":"stdout","time":16405.354373159,"data":"ALL STAGES FINISHED\n"}
+,{"stream_name":"stderr","time":16409.831995241,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":16409.832030182,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":16410.094954412,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":16410.094994752,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":16411.142362253,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":16411.286568323,"data":"[NbConvertApp] Writing 800432 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":16414.15021448,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":16415.590715654,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":16415.590755048,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":16415.591269849,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":16415.591504983,"data":"[NbConvertApp] Writing 1253983 bytes to __results__.html\n"}
+]

@@ -1,0 +1,5 @@
+
+# Kaggle run outputs: keep logs, tables, histories and figures; ignore the large files
+results/*/exp/**/*.pth
+results/*/results/test/
+results/*/rsuper_data/

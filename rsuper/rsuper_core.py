@@ -2665,6 +2665,15 @@ def tumors_in_segment(rows, chosen):
     return torch.tensor(vols).float(), torch.tensor(dias).float()
 
 
+# What each training sample is. Counted per epoch in train(): DataLoader workers are separate processes, so a
+# counter on the dataset object never reaches the main process (run 1 logged all zeros for this reason).
+#   on_segment       : report case cropped on a reported sub-segment (the report losses apply)
+#   failed           : report case whose sub-segment did not fit the crop -> organ crop, no report loss
+#   random           : report case, 'random crop by chance' (10 %), no report loss
+#   no_lesion_report : report case whose report says 'no lesion' (none in MSD)
+CROP_KINDS = ['mask_case', 'on_segment', 'failed', 'random', 'no_lesion_report']
+
+
 class RSuperDataset(torch.utils.data.Dataset):
     """Stand-in for training/dataset/dim3/dataset_abdomenatlas_UFO.py (and dataset_abdomenatlas.py when
     there are no report cases). Every item is a dict with the keys calculate_loss() expects:
@@ -2702,7 +2711,6 @@ class RSuperDataset(torch.utils.data.Dataset):
                 rep = rep + random.Random(seed).choices(rep, k=len(mask) - len(rep))
         self.items = mask + rep
         random.Random(seed).shuffle(self.items)
-        self.stats = dict(on_segment=0, failed=0, random=0)
 
     def __len__(self):
         return self.length
@@ -2733,7 +2741,7 @@ class RSuperDataset(torch.utils.data.Dataset):
         # 4 organ channels -> 5 channels (lesion channel added as 0; assign_labels())
         lab5 = torch.zeros((1, len(CLASSES)) + tuple(lab.shape[-3:]), dtype=lab.dtype)
         lab5[:, :4] = lab[:, :4]
-        chosen = 'random'
+        chosen, kind = 'random', CROP_KINDS.index('no_lesion_report')
         if rows is None:                                  # 'no lesion' report -> random/organ crop, lesion known = 0
             img, lab5 = random_crop_on_tumor(img, lab5, [], d, d, d, False, foreground_classes=FOREGROUND_IDX)
             flat = []
@@ -2741,7 +2749,7 @@ class RSuperDataset(torch.utils.data.Dataset):
             groups, flat, options = report_segments(rows)
             if np.random.random() < 0.1:                  # 'Random crop by chance'
                 img, lab5 = crop_3d(img, lab5, [d, d, d], mode='random')
-                self.stats['random'] += 1
+                kind = CROP_KINDS.index('random')
             else:
                 opts = list(options)
                 while opts:
@@ -2751,11 +2759,11 @@ class RSuperDataset(torch.utils.data.Dataset):
                     if isinstance(out, tuple):
                         img, lab5, _ = out
                         chosen = seg
-                        self.stats['on_segment'] += 1
+                        kind = CROP_KINDS.index('on_segment')
                         break
                     opts = [o for o in opts if o != seg]
                 if chosen == 'random':                    # segment does not fit the crop -> organ crop, no report loss
-                    self.stats['failed'] += 1
+                    kind = CROP_KINDS.index('failed')
                     img, lab5 = random_crop_on_tumor(img, lab5, [], d, d, d, False, foreground_classes=FOREGROUND_IDX)
         lab5 = lab5[0].float()
         unk = torch.zeros_like(lab5)
@@ -2767,14 +2775,15 @@ class RSuperDataset(torch.utils.data.Dataset):
             mask[LESION] = (sum(lab5[SEG_IDX[s]] for s in chosen) > 0).float()   # get_chosen_segment_mask()
         else:
             vols, dias = torch.zeros(10), torch.zeros(10, 3)
-        return img[0], lab5, unk, mask, vols, dias
+        return img[0], lab5, unk, mask, vols, dias, kind
 
     def __getitem__(self, idx):
         img, lab, bd, is_rep = self._load(idx)
         if is_rep:
-            img, lab, unk, mask, vols, dias = self._report_case(img, lab, bd)
+            img, lab, unk, mask, vols, dias, kind = self._report_case(img, lab, bd)
         else:
             img, lab, unk, mask, vols, dias = self._mask_case(img, lab)
+            kind = CROP_KINDS.index('mask_case')
         x = img[None]
         for p, f in [(0.3, lambda t: brightness_multiply(t, multiply_range=[0.7, 1.3])),
                      (0.3, lambda t: brightness_additive(t, std=0.1)),
@@ -2785,7 +2794,8 @@ class RSuperDataset(torch.utils.data.Dataset):
             if np.random.random() < p:
                 x = f(x)
         return {'image': x[0].float(), 'label': lab, 'unk_channels': unk, 'volumes': vols.float(),
-                'mask': mask, 'diameters': dias.float(), 'is_report': torch.tensor(float(is_rep))}
+                'mask': mask, 'diameters': dias.float(), 'is_report': torch.tensor(float(is_rep)),
+                'crop_kind': torch.tensor(kind)}
 
 
 # ============================================================================== training
@@ -2857,9 +2867,11 @@ def train(cfg):
         for g in opt.param_groups:
             g['lr'] = cfg['lr'] * m
         print(f'Starting epoch {epoch+1}/{cfg["epochs"]} lr {cfg["lr"]*m:.2e}', flush=True)
-        net.train(); t0 = time.time(); agg = {}
+        net.train(); t0 = time.time(); agg = {}; crops = dict.fromkeys(CROP_KINDS, 0)
         for i in range(cfg['iters']):
             b = next(it)
+            for k in b.pop('crop_kind').tolist():
+                crops[CROP_KINDS[k]] += 1
             b = {k: v.to(dev, non_blocking=True) for k, v in b.items()}
             with torch.autocast('cuda', dtype=torch.float16, enabled=use_amp):
                 out = model(b['image'])
@@ -2882,9 +2894,10 @@ def train(cfg):
                         epoch=epoch + 1, step=step, cfg=cfg), ck + '.tmp')
         os.replace(ck + '.tmp', ck)
         with open(os.path.join(out_dir, 'history.jsonl'), 'a') as f:
-            f.write(json.dumps(dict(epoch=epoch + 1, sec=round(time.time() - t0, 1), **{k: v / cfg['iters'] for k, v in agg.items()})) + '\n')
+            f.write(json.dumps(dict(epoch=epoch + 1, sec=round(time.time() - t0, 1), lr=cfg['lr'] * m, crops=crops,
+                                **{k: v / cfg['iters'] for k, v in agg.items()})) + '\n')
         print(f'epoch {epoch+1} done in {time.time()-t0:.0f}s; ' + ' '.join(f'{k} {v/cfg["iters"]:.4f}' for k, v in agg.items())
-              + f' | crops {getattr(ds, "stats", {})}', flush=True)
+              + f' | crops {crops}', flush=True)
 
 
 # ============================================================================== inference
@@ -2920,6 +2933,14 @@ def sliding_window(model, img, win, overlap=0.5, dev='cpu', amp=True):
     return prob[:, :D, :H, :W].cpu()
 
 
+def roi_slices(mask, margin):
+    """Bounding box of a binary mask + margin (voxels = mm on the 1 mm grid), clipped to the volume
+    (same rule as rsuper_msd.mask_bbox, which crops the training CTs)."""
+    idx = np.argwhere(mask)
+    lo, hi = idx.min(0), idx.max(0) + 1
+    return tuple(slice(max(0, int(a) - margin), min(int(d), int(b) + margin)) for a, b, d in zip(lo, hi, mask.shape))
+
+
 def predict(cfg):
     dev = torch.device(f'cuda:{cfg["gpu"]}' if torch.cuda.is_available() else 'cpu')
     s = torch.load(cfg['ckpt'], map_location=dev, weights_only=False)
@@ -2935,9 +2956,17 @@ def predict(cfg):
             continue
         t0 = time.time()
         img = torch.from_numpy(np.load(os.path.join(cfg['img_dir'], bd + '.npz'))['arr_0']).float()
-        prob = sliding_window(net, img, cfg['window'], cfg.get('overlap', 0.5), dev)
-        np.savez_compressed(out, pred=(prob > 0.5).numpy().astype(np.uint8), classes=np.array(CLASSES))
-        print(f'[{k+1}/{len(ids)}] {bd} {tuple(img.shape)} {time.time()-t0:.1f}s', flush=True)
+        pred = np.zeros((len(CLASSES),) + tuple(img.shape), np.uint8)
+        sl = (slice(None),) * 3
+        if cfg.get('roi_margin') is not None:
+            # Predict only inside the ground-truth pancreas bounding box + margin: the field of view the training
+            # crops come from (rsuper_msd.py crops training CTs to the pancreas bbox + TRAIN_MARGIN). Zeros elsewhere.
+            panc = np.load(os.path.join(cfg['img_dir'], bd + '_gt.npz'))['arr_0'][CLASSES.index('pancreas')] > 0
+            sl = roi_slices(panc, cfg['roi_margin'])
+        prob = sliding_window(net, img[sl], cfg['window'], cfg.get('overlap', 0.5), dev)
+        pred[(slice(None),) + sl] = (prob > 0.5).numpy()
+        np.savez_compressed(out, pred=pred, classes=np.array(CLASSES))
+        print(f'[{k+1}/{len(ids)}] {bd} {tuple(img.shape)} -> window {tuple(prob.shape[1:])} {time.time()-t0:.1f}s', flush=True)
 
 
 if __name__ == '__main__':
